@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VULNAI | AI-Driven Cybersecurity Vulnerability Risk Scoring</title>
+
+    <meta name="description" content="VULNAI is an AI-driven cybersecurity vulnerability risk scoring and prioritization platform using XGBoost, CVSS, EPSS, CISA KEV and SHAP explainability.">
+
+    <meta name="keywords" content="VULNAI, cybersecurity, AI vulnerability risk scoring, vulnerability prioritization, CVE analysis, CVSS, EPSS, XGBoost, SHAP, CISA KEV, vulnerability management">
+
+    <meta name="author" content="VULNAI Project Team">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#07111f">
+
+    <meta property="og:title" content="VULNAI - AI Vulnerability Risk Scoring">
+    <meta property="og:description" content="Analyse, understand and prioritize cybersecurity vulnerabilities using machine learning and explainable AI.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar container">
+        <a href="#home" class="brand">
+            <img src="assets/logo.png" alt="VULNAI logo" class="logo">
+            <span>VUL<span class="accent">NAI</span></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#technology">Technology</a>
+            <a href="#contact">Project</a>
+            <a href="YOUR_STREAMLIT_APP_URL" target="_blank"
+               rel="noopener noreferrer" class="nav-button">
+                Launch Dashboard ↗
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+
+            <div class="hero-label">
+                <span class="status-dot"></span>
+                AI-POWERED CYBERSECURITY PLATFORM
+            </div>
+
+            <h1>
+                Prioritize Vulnerabilities.
+                <span class="gradient-text">Protect What Matters.</span>
+            </h1>
+
+            <p class="hero-description">
+                VULNAI is an AI-driven vulnerability risk scoring and
+                prioritization platform that helps identify which
+                cybersecurity vulnerabilities require attention first.
+                It combines machine learning, security intelligence
+                and explainable AI to support informed remediation decisions.
+            </p>
+
+            <div class="hero-actions">
+                <a href="YOUR_STREAMLIT_APP_URL"
+                   target="_blank" rel="noopener noreferrer"
+                   class="button button-primary">
+                    Launch Live Dashboard ↗
+                </a>
+
+                <a href="#about" class="button button-secondary">
+                    Explore VULNAI
+                </a>
+            </div>
+
+            <div class="hero-tags">
+                <span>XGBoost</span>
+                <span>CVSS</span>
+                <span>EPSS</span>
+                <span>CISA KEV</span>
+                <span>SHAP</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">ABOUT THE PROJECT</span>
+                <h2>Understanding Vulnerability Risk Beyond Severity</h2>
+                <p>
+                    Traditional severity scores alone do not always
+                    indicate which vulnerabilities are most likely
+                    to be exploited. VULNAI combines multiple security
+                    indicators with asset context to produce a
+                    prioritized vulnerability ranking.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>3,439 CVEs Analysed</h3>
+                    <p>
+                        The current project dataset contains 3,439
+                        vulnerability records for risk analysis.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Machine Learning</h3>
+                    <p>
+                        An XGBoost classification model estimates
+                        exploitation risk using selected vulnerability
+                        indicators.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Explainable AI</h3>
+                    <p>
+                        SHAP explanations help users understand
+                        which input features contribute to model
+                        predictions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="section section-dark" id="features">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">PLATFORM CAPABILITIES</span>
+                <h2>What VULNAI Offers</h2>
+                <p>
+                    A unified approach to cybersecurity vulnerability
+                    analysis, risk scoring and remediation prioritization.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>ML-Based Risk Scoring</h3>
+                    <p>
+                        Uses an XGBoost model to estimate exploitation
+                        risk from vulnerability-related features.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Vulnerability Prioritization</h3>
+                    <p>
+                        Combines model risk with asset criticality
+                        and internet exposure to rank vulnerabilities.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>CVSS and EPSS Analysis</h3>
+                    <p>
+                        Uses technical severity and exploitation
+                        probability indicators to support risk analysis.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>SHAP Explainability</h3>
+                    <p>
+                        Provides feature-contribution explanations
+                        to make model outputs easier to interpret.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Scanner Report Integration</h3>
+                    <p>
+                        Supports importing Nmap and OWASP ZAP
+                        reports for vulnerability review.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Remediation Guidance</h3>
+                    <p>
+                        Presents prioritized findings with suggested
+                        remediation actions and illustrative timelines.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKFLOW SECTION -->
+    <section class="section" id="workflow">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">HOW IT WORKS</span>
+                <h2>From Vulnerability Data to Prioritized Action</h2>
+            </div>
+
+            <div class="workflow-grid">
+                <div class="workflow-card">
+                    <span>01</span>
+                    <h3>Data Collection</h3>
+                    <p>NVD CVSS, FIRST EPSS and CISA KEV information.</p>
+                </div>
+
+                <div class="workflow-card">
+                    <span>02</span>
+                    <h3>ML Risk Analysis</h3>
+                    <p>Feature processing and XGBoost-based risk estimation.</p>
+                </div>
+
+                <div class="workflow-card">
+                    <span>03</span>
+                    <h3>Risk Prioritization</h3>
+                    <p>Risk ranking using model output and asset context.</p>
+                </div>
+
+                <div class="workflow-card">
+                    <span>04</span>
+                    <h3>Explain and Remediate</h3>
+                    <p>SHAP explanations and remediation recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DASHBOARD PREVIEW -->
+    <section class="section section-dark" id="dashboard">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">LIVE PLATFORM</span>
+                <h2>Explore the VULNAI Dashboard</h2>
+                <p>
+                    Explore vulnerability search, prioritization,
+                    comparative analysis, SHAP explainability and
+                    scanner report features.
+                </p>
+            </div>
+
+            <div class="dashboard-preview">
+                <img src="assets/dashboard.png"
+                     alt="Screenshot of the VULNAI cybersecurity risk scoring dashboard"
+                     loading="lazy">
+            </div>
+
+            <div class="center">
+                <a href="YOUR_STREAMLIT_APP_URL"
+                   target="_blank" rel="noopener noreferrer"
+                   class="button button-primary">
+                    Open VULNAI Dashboard ↗
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGY SECTION -->
+    <section class="section" id="technology">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">TECHNOLOGY STACK</span>
+                <h2>Built With Cybersecurity and AI Technologies</h2>
+            </div>
+
+            <div class="technology-list">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>XGBoost</span>
+                <span>Scikit-learn</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>SHAP</span>
+                <span>NVD</span>
+                <span>FIRST EPSS</span>
+                <span>CISA KEV</span>
+                <span>Nmap</span>
+                <span>OWASP ZAP</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT INFORMATION -->
+    <section class="section section-dark" id="contact">
+        <div class="container project-box">
+            <span class="eyebrow">RESEARCH AND EDUCATION</span>
+            <h2>Explore the VULNAI Project</h2>
+            <p>
+                VULNAI is a research and educational prototype
+                developed to explore machine learning-based
+                cybersecurity vulnerability risk scoring and
+                prioritization.
+            </p>
+
+            <div class="hero-actions">
+                <a href="YOUR_STREAMLIT_APP_URL"
+                   target="_blank" rel="noopener noreferrer"
+                   class="button button-primary">
+                    Try the Dashboard ↗
+                </a>
+
+                <a href="https://github.com/tejashwinirreddy/ML-Based-Risk-Scoring-Engine-for-Cybersecurity-Vulnerability-Prioritization"
+                   target="_blank" rel="noopener noreferrer"
+                   class="button button-secondary">
+                    View Source Code ↗
+                </a>
+            </div>
+
+            <p class="disclaimer">
+                For research and educational purposes.
+                Scan only systems you own or have explicit permission to test.
+                Model scores are decision-support estimates, not guarantees
+                of real-world exploitation.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <a href="#home" class="brand">
+            <img src="assets/logo.png" alt="" class="logo">
+            <span>VUL<span class="accent">NAI</span></span>
+        </a>
+
+        <p>
+            AI-Driven Vulnerability Risk Scoring and Prioritization
+        </p>
+
+        <p>© <span id="year"></span> VULNAI. Research and educational prototype.</p>
+    </div>
+</footer>
+
+</body>
+</html>
